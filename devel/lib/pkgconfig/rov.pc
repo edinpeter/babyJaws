@@ -1,0 +1,8 @@
+prefix=/home/peter/rov/devel
+
+Name: rov
+Description: Description of rov
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/peter/rov/devel/lib 
+Requires: 
