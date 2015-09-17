@@ -1,6 +1,9 @@
 #include "ros/ros.h"
+#undef serial
 #include "sensor_msgs/Joy.h"
-//#include "boot/asio.hpp"
+#ifdef serial
+	#include "boot/asio.hpp"
+#endif
 
 
 const int leftStickX = 1;
@@ -22,10 +25,11 @@ class Controls
     ros::Publisher pub;
     ros::Subscriber joy;
     ros::Subscriber imu;
-    /*boost::asio::serial_port s_p;
-    s_p.open("/dev/ttyUSB0");
-	s_p.set_option(boost::asio::serial_port_base::baud_rate(9600));
-	*/
+    #ifdef serial
+    	boost::asio::serial_port s_p;
+    	s_p.open("/dev/ttyUSB0");
+		s_p.set_option(boost::asio::serial_port_base::baud_rate(9600));
+	#endif
 };
 
 int main(int argc, char **argv)
@@ -74,7 +78,34 @@ void Controls::joy_callback(const sensor_msgs::Joy::ConstPtr& joy)
 
   leftPower = joy->axes[leftStickY] * (100.0 / 127.0) * leftMultiplier;
   rightPower = joy->axes[leftStickY] * (100.0 / 127.0) * rightMultiplier;
-
+  if (leftPower < 0){
+  	leftPower = 1500-leftPower;
+  }
+  else{
+  	leftPower = 1500 + leftPower;
+  }
+  if (rightPower < 0){
+  	rightPower = 1500-rightPower;
+  }
+  else{
+  	rightPower = 1500 + rightPower;
+  }
+  const int SIZE = 11;
+  unsigned char packet[SIZE];
+  packet[0] = '-';
+	packet[1] = leftServoAngle >> 8;
+	packet[2] = leftServoAngle;
+	packet[3] = rightServoAngle >> 8;
+	packet[4] = rightServoAngle;
+	packet[5] = 0 >> 8;
+	packet[6] = 0;
+	packet[7] = leftPower >> 8;
+	packet[8] = leftPower;
+	packet[9] = rightPower >> 8;
+	packet[10] = rightPower;
+	#ifdef serial
+		s_p.write_some(boost::asio::buffer(&packet, SIZE));
+	#endif
 
 
 
