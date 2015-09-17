@@ -4,8 +4,6 @@ project(rov)
 find_package(catkin REQUIRED)
 find_package(catkin REQUIRED COMPONENTS roscpp)
 
-find_package(Boost REQUIRED COMPONENTS system)
-
 add_executable(rov_node rov.cpp)
 
 target_link_libraries(rov_node

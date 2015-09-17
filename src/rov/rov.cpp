@@ -1,5 +1,6 @@
 #include "ros/ros.h"
 #include "sensor_msgs/Joy.h"
+//#include "boot/asio.hpp"
 
 
 const int leftStickX = 1;
@@ -21,6 +22,10 @@ class Controls
     ros::Publisher pub;
     ros::Subscriber joy;
     ros::Subscriber imu;
+    /*boost::asio::serial_port s_p;
+    s_p.open("/dev/ttyUSB0");
+	s_p.set_option(boost::asio::serial_port_base::baud_rate(9600));
+	*/
 };
 
 int main(int argc, char **argv)
@@ -69,6 +74,7 @@ void Controls::joy_callback(const sensor_msgs::Joy::ConstPtr& joy)
 
   leftPower = joy->axes[leftStickY] * (100.0 / 127.0) * leftMultiplier;
   rightPower = joy->axes[leftStickY] * (100.0 / 127.0) * rightMultiplier;
+
 
 
 

@@ -1,8 +1,0 @@
-prefix=/home/peter/rov/install
-
-Name: rov
-Description: Description of rov
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/peter/rov/install/lib 
-Requires: 
