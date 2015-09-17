@@ -80,18 +80,9 @@ void Controls::joy_callback(const sensor_msgs::Joy::ConstPtr& joy)
 
   leftPower = joy->axes[leftStickY] * (100.0 / 127.0) * leftMultiplier;
   rightPower = joy->axes[leftStickY] * (100.0 / 127.0) * rightMultiplier;
-  if (leftPower < 0){
-  	leftPower = 1500-leftPower;
-  }
-  else{
-  	leftPower = 1500 + leftPower;
-  }
-  if (rightPower < 0){
-  	rightPower = 1500-rightPower;
-  }
-  else{
-  	rightPower = 1500 + rightPower;
-  }
+  leftPower = 1500 + leftPower;
+  rightPower = 1500 + rightPower;
+
   const int SIZE = 11;
   unsigned char packet[SIZE];
   packet[0] = '-';
