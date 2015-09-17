@@ -47,6 +47,8 @@ void Controls::loop()
 
 void Controls::joy_callback(const sensor_msgs::Joy::ConstPtr& joy)
 {
+  int leftServoAngle = 0;
+  int rightServoAngle = 0;
   int rightMultiplier = 1;
   if(joy->buttons[rightTrigger] > 0){
     rightMultiplier = 0;
@@ -56,6 +58,11 @@ void Controls::joy_callback(const sensor_msgs::Joy::ConstPtr& joy)
     leftMultiplier = 1;
   }
   /* No Servos, because I said so */
+  if(joy->buttons[xButton] > 0){
+  	leftServoAngle = 90;
+  	rightServoAngle = 90;
+  }
+  
 
 
 }
