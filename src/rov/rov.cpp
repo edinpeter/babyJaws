@@ -93,19 +93,19 @@ void Controls::joy_callback(const sensor_msgs::Joy::ConstPtr& joy)
   const int SIZE = 11;
   unsigned char packet[SIZE];
   packet[0] = '-';
-	packet[1] = leftServoAngle >> 8;
-	packet[2] = leftServoAngle;
-	packet[3] = rightServoAngle >> 8;
-	packet[4] = rightServoAngle;
-	packet[5] = 0 >> 8;
-	packet[6] = 0;
-	packet[7] = leftPower >> 8;
-	packet[8] = leftPower;
-	packet[9] = rightPower >> 8;
-	packet[10] = rightPower;
-	#ifdef serial
-		s_p.write_some(boost::asio::buffer(&packet, SIZE));
-	#endif
+  packet[1] = leftServoAngle >> 8;
+  packet[2] = leftServoAngle;
+  packet[3] = rightServoAngle >> 8;
+  packet[4] = rightServoAngle;
+  packet[5] = 0 >> 8;
+  packet[6] = 0;
+  packet[7] = leftPower >> 8;
+  packet[8] = leftPower;
+  packet[9] = rightPower >> 8;
+  packet[10] = rightPower;
+  #ifdef serial
+	s_p.write_some(boost::asio::buffer(&packet, SIZE));
+  #endif
 
 
 
