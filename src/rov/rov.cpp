@@ -1,6 +1,8 @@
 #include "ros/ros.h"
-#undef serial
 #include "sensor_msgs/Joy.h"
+
+#undef serial
+
 #ifdef serial
 	#include "boot/asio.hpp"
 #endif
@@ -106,9 +108,4 @@ void Controls::joy_callback(const sensor_msgs::Joy::ConstPtr& joy)
   #ifdef serial
 	s_p.write_some(boost::asio::buffer(&packet, SIZE));
   #endif
-
-
-
-
-
 }
