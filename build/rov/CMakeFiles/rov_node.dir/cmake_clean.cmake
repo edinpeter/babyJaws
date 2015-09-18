@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/rov_node.dir/rov.cpp.o"
-  "rov_node.pdb"
-  "rov_node"
+  "CMakeFiles/rov_node.dir/src/rov.cpp.o"
+  "/home/peter/babyJaws/devel/lib/rov/rov_node.pdb"
+  "/home/peter/babyJaws/devel/lib/rov/rov_node"
 )
 
 # Per-language clean rules from dependency scanning.

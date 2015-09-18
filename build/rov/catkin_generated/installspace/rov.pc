@@ -1,0 +1,8 @@
+prefix=/home/peter/babyJaws/install
+
+Name: rov
+Description: Description of rov
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/peter/babyJaws/install/lib 
+Requires: 

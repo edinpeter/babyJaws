@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "rov")
+set(rov_MAINTAINER "peter <peter@todo.todo>")
+set(rov_DEPRECATED "")
+set(rov_VERSION "0.0.0")
+set(rov_BUILD_DEPENDS )
+set(rov_RUN_DEPENDS )
+set(rov_BUILDTOOL_DEPENDS "catkin")

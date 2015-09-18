@@ -49,64 +49,89 @@ include rov/CMakeFiles/rov_node.dir/progress.make
 # Include the compile flags for this target's objects.
 include rov/CMakeFiles/rov_node.dir/flags.make
 
-rov/CMakeFiles/rov_node.dir/rov.cpp.o: rov/CMakeFiles/rov_node.dir/flags.make
-rov/CMakeFiles/rov_node.dir/rov.cpp.o: /home/peter/babyJaws/src/rov/rov.cpp
+rov/CMakeFiles/rov_node.dir/src/rov.cpp.o: rov/CMakeFiles/rov_node.dir/flags.make
+rov/CMakeFiles/rov_node.dir/src/rov.cpp.o: /home/peter/babyJaws/src/rov/src/rov.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/babyJaws/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object rov/CMakeFiles/rov_node.dir/rov.cpp.o"
-	cd /home/peter/babyJaws/build/rov && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/rov_node.dir/rov.cpp.o -c /home/peter/babyJaws/src/rov/rov.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object rov/CMakeFiles/rov_node.dir/src/rov.cpp.o"
+	cd /home/peter/babyJaws/build/rov && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/rov_node.dir/src/rov.cpp.o -c /home/peter/babyJaws/src/rov/src/rov.cpp
 
-rov/CMakeFiles/rov_node.dir/rov.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rov_node.dir/rov.cpp.i"
-	cd /home/peter/babyJaws/build/rov && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/peter/babyJaws/src/rov/rov.cpp > CMakeFiles/rov_node.dir/rov.cpp.i
+rov/CMakeFiles/rov_node.dir/src/rov.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rov_node.dir/src/rov.cpp.i"
+	cd /home/peter/babyJaws/build/rov && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/peter/babyJaws/src/rov/src/rov.cpp > CMakeFiles/rov_node.dir/src/rov.cpp.i
 
-rov/CMakeFiles/rov_node.dir/rov.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rov_node.dir/rov.cpp.s"
-	cd /home/peter/babyJaws/build/rov && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/peter/babyJaws/src/rov/rov.cpp -o CMakeFiles/rov_node.dir/rov.cpp.s
+rov/CMakeFiles/rov_node.dir/src/rov.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rov_node.dir/src/rov.cpp.s"
+	cd /home/peter/babyJaws/build/rov && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/peter/babyJaws/src/rov/src/rov.cpp -o CMakeFiles/rov_node.dir/src/rov.cpp.s
 
-rov/CMakeFiles/rov_node.dir/rov.cpp.o.requires:
-.PHONY : rov/CMakeFiles/rov_node.dir/rov.cpp.o.requires
+rov/CMakeFiles/rov_node.dir/src/rov.cpp.o.requires:
+.PHONY : rov/CMakeFiles/rov_node.dir/src/rov.cpp.o.requires
 
-rov/CMakeFiles/rov_node.dir/rov.cpp.o.provides: rov/CMakeFiles/rov_node.dir/rov.cpp.o.requires
-	$(MAKE) -f rov/CMakeFiles/rov_node.dir/build.make rov/CMakeFiles/rov_node.dir/rov.cpp.o.provides.build
-.PHONY : rov/CMakeFiles/rov_node.dir/rov.cpp.o.provides
+rov/CMakeFiles/rov_node.dir/src/rov.cpp.o.provides: rov/CMakeFiles/rov_node.dir/src/rov.cpp.o.requires
+	$(MAKE) -f rov/CMakeFiles/rov_node.dir/build.make rov/CMakeFiles/rov_node.dir/src/rov.cpp.o.provides.build
+.PHONY : rov/CMakeFiles/rov_node.dir/src/rov.cpp.o.provides
 
-rov/CMakeFiles/rov_node.dir/rov.cpp.o.provides.build: rov/CMakeFiles/rov_node.dir/rov.cpp.o
+rov/CMakeFiles/rov_node.dir/src/rov.cpp.o.provides.build: rov/CMakeFiles/rov_node.dir/src/rov.cpp.o
 
 # Object files for target rov_node
 rov_node_OBJECTS = \
-"CMakeFiles/rov_node.dir/rov.cpp.o"
+"CMakeFiles/rov_node.dir/src/rov.cpp.o"
 
 # External object files for target rov_node
 rov_node_EXTERNAL_OBJECTS =
 
-rov/rov_node: rov/CMakeFiles/rov_node.dir/rov.cpp.o
-rov/rov_node: rov/CMakeFiles/rov_node.dir/build.make
-rov/rov_node: /opt/ros/jade/lib/libroscpp.so
-rov/rov_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-rov/rov_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-rov/rov_node: /opt/ros/jade/lib/librosconsole.so
-rov/rov_node: /opt/ros/jade/lib/librosconsole_log4cxx.so
-rov/rov_node: /opt/ros/jade/lib/librosconsole_backend_interface.so
-rov/rov_node: /usr/lib/liblog4cxx.so
-rov/rov_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-rov/rov_node: /opt/ros/jade/lib/libroscpp_serialization.so
-rov/rov_node: /opt/ros/jade/lib/librostime.so
-rov/rov_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-rov/rov_node: /opt/ros/jade/lib/libxmlrpcpp.so
-rov/rov_node: /opt/ros/jade/lib/libcpp_common.so
-rov/rov_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-rov/rov_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-rov/rov_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-rov/rov_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-rov/rov_node: rov/CMakeFiles/rov_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable rov_node"
+/home/peter/babyJaws/devel/lib/rov/rov_node: rov/CMakeFiles/rov_node.dir/src/rov.cpp.o
+/home/peter/babyJaws/devel/lib/rov/rov_node: rov/CMakeFiles/rov_node.dir/build.make
+/home/peter/babyJaws/devel/lib/rov/rov_node: /opt/ros/jade/lib/libimage_transport.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /opt/ros/jade/lib/libmessage_filters.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /opt/ros/jade/lib/libclass_loader.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/libPocoFoundation.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /opt/ros/jade/lib/libroscpp.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /opt/ros/jade/lib/libxmlrpcpp.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /opt/ros/jade/lib/libroslib.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /opt/ros/jade/lib/libcv_bridge.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8
+/home/peter/babyJaws/devel/lib/rov/rov_node: /opt/ros/jade/lib/librosconsole.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /opt/ros/jade/lib/librosconsole_log4cxx.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /opt/ros/jade/lib/librosconsole_backend_interface.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/liblog4cxx.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /opt/ros/jade/lib/libroscpp_serialization.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /opt/ros/jade/lib/librostime.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /opt/ros/jade/lib/libcpp_common.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/peter/babyJaws/devel/lib/rov/rov_node: rov/CMakeFiles/rov_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/peter/babyJaws/devel/lib/rov/rov_node"
 	cd /home/peter/babyJaws/build/rov && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rov_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-rov/CMakeFiles/rov_node.dir/build: rov/rov_node
+rov/CMakeFiles/rov_node.dir/build: /home/peter/babyJaws/devel/lib/rov/rov_node
 .PHONY : rov/CMakeFiles/rov_node.dir/build
 
-rov/CMakeFiles/rov_node.dir/requires: rov/CMakeFiles/rov_node.dir/rov.cpp.o.requires
+rov/CMakeFiles/rov_node.dir/requires: rov/CMakeFiles/rov_node.dir/src/rov.cpp.o.requires
 .PHONY : rov/CMakeFiles/rov_node.dir/requires
 
 rov/CMakeFiles/rov_node.dir/clean:

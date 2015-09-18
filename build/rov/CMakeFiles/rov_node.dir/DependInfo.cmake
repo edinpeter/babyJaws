@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/peter/babyJaws/src/rov/rov.cpp" "/home/peter/babyJaws/build/rov/CMakeFiles/rov_node.dir/rov.cpp.o"
+  "/home/peter/babyJaws/src/rov/src/rov.cpp" "/home/peter/babyJaws/build/rov/CMakeFiles/rov_node.dir/src/rov.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -21,6 +21,9 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/include/opencv"
+  "/home/peter/babyJaws/src/rov/include"
+  "/opt/ros/jade/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

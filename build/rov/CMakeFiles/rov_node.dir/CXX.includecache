@@ -6,11 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/peter/babyJaws/src/rov/rov.cpp
-ros/ros.h
-/home/peter/babyJaws/src/rov/ros/ros.h
-sensor_msgs/Joy.h
-/home/peter/babyJaws/src/rov/sensor_msgs/Joy.h
-boot/asio.hpp
-/home/peter/babyJaws/src/rov/boot/asio.hpp
-

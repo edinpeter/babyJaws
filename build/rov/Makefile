@@ -150,18 +150,74 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-rov/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/peter/babyJaws/build && $(MAKE) -f CMakeFiles/Makefile2 rov/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : rov/CMakeFiles/_catkin_empty_exported_target.dir/rule
+rov/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/peter/babyJaws/build && $(MAKE) -f CMakeFiles/Makefile2 rov/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : rov/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-_catkin_empty_exported_target: rov/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : _catkin_empty_exported_target
+geometry_msgs_generate_messages_cpp: rov/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : geometry_msgs_generate_messages_cpp
 
 # fast build rule for target.
-_catkin_empty_exported_target/fast:
-	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/_catkin_empty_exported_target.dir/build.make rov/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make rov/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+rov/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
+	cd /home/peter/babyJaws/build && $(MAKE) -f CMakeFiles/Makefile2 rov/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : rov/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: rov/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make rov/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+rov/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/peter/babyJaws/build && $(MAKE) -f CMakeFiles/Makefile2 rov/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : rov/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: rov/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make rov/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+rov/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/peter/babyJaws/build && $(MAKE) -f CMakeFiles/Makefile2 rov/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : rov/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: rov/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make rov/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+rov/CMakeFiles/jaws_vision.dir/rule:
+	cd /home/peter/babyJaws/build && $(MAKE) -f CMakeFiles/Makefile2 rov/CMakeFiles/jaws_vision.dir/rule
+.PHONY : rov/CMakeFiles/jaws_vision.dir/rule
+
+# Convenience name for target.
+jaws_vision: rov/CMakeFiles/jaws_vision.dir/rule
+.PHONY : jaws_vision
+
+# fast build rule for target.
+jaws_vision/fast:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/jaws_vision.dir/build.make rov/CMakeFiles/jaws_vision.dir/build
+.PHONY : jaws_vision/fast
 
 # Convenience name for target.
 rov/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
@@ -290,6 +346,62 @@ rov_node/fast:
 .PHONY : rov_node/fast
 
 # Convenience name for target.
+rov/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
+	cd /home/peter/babyJaws/build && $(MAKE) -f CMakeFiles/Makefile2 rov/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : rov/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: rov/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make rov/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+rov/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
+	cd /home/peter/babyJaws/build && $(MAKE) -f CMakeFiles/Makefile2 rov/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : rov/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: rov/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make rov/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+rov/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/peter/babyJaws/build && $(MAKE) -f CMakeFiles/Makefile2 rov/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : rov/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: rov/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make rov/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+rov/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/peter/babyJaws/build && $(MAKE) -f CMakeFiles/Makefile2 rov/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : rov/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: rov/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make rov/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+# Convenience name for target.
 rov/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
 	cd /home/peter/babyJaws/build && $(MAKE) -f CMakeFiles/Makefile2 rov/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : rov/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
@@ -345,29 +457,53 @@ std_msgs_generate_messages_py/fast:
 	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/std_msgs_generate_messages_py.dir/build.make rov/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
-rov.o: rov.cpp.o
-.PHONY : rov.o
+src/color_finder_average.o: src/color_finder_average.cpp.o
+.PHONY : src/color_finder_average.o
 
 # target to build an object file
-rov.cpp.o:
-	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/rov_node.dir/build.make rov/CMakeFiles/rov_node.dir/rov.cpp.o
-.PHONY : rov.cpp.o
+src/color_finder_average.cpp.o:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/jaws_vision.dir/build.make rov/CMakeFiles/jaws_vision.dir/src/color_finder_average.cpp.o
+.PHONY : src/color_finder_average.cpp.o
 
-rov.i: rov.cpp.i
-.PHONY : rov.i
+src/color_finder_average.i: src/color_finder_average.cpp.i
+.PHONY : src/color_finder_average.i
 
 # target to preprocess a source file
-rov.cpp.i:
-	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/rov_node.dir/build.make rov/CMakeFiles/rov_node.dir/rov.cpp.i
-.PHONY : rov.cpp.i
+src/color_finder_average.cpp.i:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/jaws_vision.dir/build.make rov/CMakeFiles/jaws_vision.dir/src/color_finder_average.cpp.i
+.PHONY : src/color_finder_average.cpp.i
 
-rov.s: rov.cpp.s
-.PHONY : rov.s
+src/color_finder_average.s: src/color_finder_average.cpp.s
+.PHONY : src/color_finder_average.s
 
 # target to generate assembly for a file
-rov.cpp.s:
-	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/rov_node.dir/build.make rov/CMakeFiles/rov_node.dir/rov.cpp.s
-.PHONY : rov.cpp.s
+src/color_finder_average.cpp.s:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/jaws_vision.dir/build.make rov/CMakeFiles/jaws_vision.dir/src/color_finder_average.cpp.s
+.PHONY : src/color_finder_average.cpp.s
+
+src/rov.o: src/rov.cpp.o
+.PHONY : src/rov.o
+
+# target to build an object file
+src/rov.cpp.o:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/rov_node.dir/build.make rov/CMakeFiles/rov_node.dir/src/rov.cpp.o
+.PHONY : src/rov.cpp.o
+
+src/rov.i: src/rov.cpp.i
+.PHONY : src/rov.i
+
+# target to preprocess a source file
+src/rov.cpp.i:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/rov_node.dir/build.make rov/CMakeFiles/rov_node.dir/src/rov.cpp.i
+.PHONY : src/rov.cpp.i
+
+src/rov.s: src/rov.cpp.s
+.PHONY : src/rov.s
+
+# target to generate assembly for a file
+src/rov.cpp.s:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/rov_node.dir/build.make rov/CMakeFiles/rov_node.dir/src/rov.cpp.s
+.PHONY : src/rov.cpp.s
 
 # Help Target
 help:
@@ -375,11 +511,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... _catkin_empty_exported_target"
 	@echo "... edit_cache"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
+	@echo "... jaws_vision"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
@@ -391,14 +531,21 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rov_node"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
-	@echo "... rov.o"
-	@echo "... rov.i"
-	@echo "... rov.s"
+	@echo "... src/color_finder_average.o"
+	@echo "... src/color_finder_average.i"
+	@echo "... src/color_finder_average.s"
+	@echo "... src/rov.o"
+	@echo "... src/rov.i"
+	@echo "... src/rov.s"
 .PHONY : help
 
 
