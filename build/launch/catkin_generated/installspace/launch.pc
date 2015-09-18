@@ -1,0 +1,8 @@
+prefix=/home/peter/babyJaws/install
+
+Name: launch
+Description: Description of launch
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/peter/babyJaws/install/lib 
+Requires: 

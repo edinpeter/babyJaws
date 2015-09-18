@@ -1,2 +1,2 @@
-rov
+launch:rov
 -DCATKIN_DEVEL_PREFIX=/home/peter/babyJaws/devel -DCMAKE_INSTALL_PREFIX=/home/peter/babyJaws/install -G Unix Makefiles
