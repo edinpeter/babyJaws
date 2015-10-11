@@ -529,6 +529,7 @@ clean: launch/CMakeFiles/run_tests_launch_roslaunch-check_babyJaws.launch.dir/cl
 
 # Convenience name for "all" pass in the directory.
 rov/all: rov/CMakeFiles/jaws_vision.dir/all
+rov/all: rov/CMakeFiles/lights_node.dir/all
 rov/all: rov/CMakeFiles/rov_node.dir/all
 .PHONY : rov/all
 
@@ -538,6 +539,7 @@ rov/clean: rov/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 rov/clean: rov/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 rov/clean: rov/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 rov/clean: rov/CMakeFiles/jaws_vision.dir/clean
+rov/clean: rov/CMakeFiles/lights_node.dir/clean
 rov/clean: rov/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 rov/clean: rov/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 rov/clean: rov/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
@@ -718,6 +720,41 @@ rov/CMakeFiles/jaws_vision.dir/clean:
 
 # clean rule for target.
 clean: rov/CMakeFiles/jaws_vision.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target rov/CMakeFiles/lights_node.dir
+
+# All Build rule for target.
+rov/CMakeFiles/lights_node.dir/all:
+	$(MAKE) -f rov/CMakeFiles/lights_node.dir/build.make rov/CMakeFiles/lights_node.dir/depend
+	$(MAKE) -f rov/CMakeFiles/lights_node.dir/build.make rov/CMakeFiles/lights_node.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/babyJaws/build/CMakeFiles  4
+	@echo "Built target lights_node"
+.PHONY : rov/CMakeFiles/lights_node.dir/all
+
+# Include target in all.
+all: rov/CMakeFiles/lights_node.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+rov/CMakeFiles/lights_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/babyJaws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 rov/CMakeFiles/lights_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/babyJaws/build/CMakeFiles 0
+.PHONY : rov/CMakeFiles/lights_node.dir/rule
+
+# Convenience name for target.
+lights_node: rov/CMakeFiles/lights_node.dir/rule
+.PHONY : lights_node
+
+# clean rule for target.
+rov/CMakeFiles/lights_node.dir/clean:
+	$(MAKE) -f rov/CMakeFiles/lights_node.dir/build.make rov/CMakeFiles/lights_node.dir/clean
+.PHONY : rov/CMakeFiles/lights_node.dir/clean
+
+# clean rule for target.
+clean: rov/CMakeFiles/lights_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -975,7 +1012,7 @@ clean: rov/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 rov/CMakeFiles/rov_node.dir/all:
 	$(MAKE) -f rov/CMakeFiles/rov_node.dir/build.make rov/CMakeFiles/rov_node.dir/depend
 	$(MAKE) -f rov/CMakeFiles/rov_node.dir/build.make rov/CMakeFiles/rov_node.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/babyJaws/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/babyJaws/build/CMakeFiles  5
 	@echo "Built target rov_node"
 .PHONY : rov/CMakeFiles/rov_node.dir/all
 

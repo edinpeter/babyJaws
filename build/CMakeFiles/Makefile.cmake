@@ -197,6 +197,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "rov/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "rov/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake"
   "rov/CMakeFiles/jaws_vision.dir/DependInfo.cmake"
+  "rov/CMakeFiles/lights_node.dir/DependInfo.cmake"
   "rov/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake"
   "rov/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake"
   "rov/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake"

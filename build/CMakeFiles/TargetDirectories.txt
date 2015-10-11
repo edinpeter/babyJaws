@@ -12,6 +12,7 @@
 /home/peter/babyJaws/build/gtest/CMakeFiles/gtest.dir
 /home/peter/babyJaws/build/gtest/CMakeFiles/gtest_main.dir
 /home/peter/babyJaws/build/rov/CMakeFiles/jaws_vision.dir
+/home/peter/babyJaws/build/rov/CMakeFiles/lights_node.dir
 /home/peter/babyJaws/build/rov/CMakeFiles/roscpp_generate_messages_cpp.dir
 /home/peter/babyJaws/build/rov/CMakeFiles/roscpp_generate_messages_eus.dir
 /home/peter/babyJaws/build/rov/CMakeFiles/roscpp_generate_messages_lisp.dir

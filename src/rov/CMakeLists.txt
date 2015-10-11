@@ -17,6 +17,12 @@ include_directories(include ${catkin_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS} ${Eige
 
 add_executable(rov_node src/rov.cpp)
 add_executable(jaws_vision src/color_finder_average.cpp)
+add_executable(lights_node src/robotLights.cpp)
+
+target_link_libraries(lights_node
+		${catkin_LIBRARIES}
+		${ROS_LIBRARIES}
+)
 
 target_link_libraries(rov_node
   ${catkin_LIBRARIES}

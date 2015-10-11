@@ -220,6 +220,20 @@ jaws_vision/fast:
 .PHONY : jaws_vision/fast
 
 # Convenience name for target.
+rov/CMakeFiles/lights_node.dir/rule:
+	cd /home/peter/babyJaws/build && $(MAKE) -f CMakeFiles/Makefile2 rov/CMakeFiles/lights_node.dir/rule
+.PHONY : rov/CMakeFiles/lights_node.dir/rule
+
+# Convenience name for target.
+lights_node: rov/CMakeFiles/lights_node.dir/rule
+.PHONY : lights_node
+
+# fast build rule for target.
+lights_node/fast:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/lights_node.dir/build.make rov/CMakeFiles/lights_node.dir/build
+.PHONY : lights_node/fast
+
+# Convenience name for target.
 rov/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
 	cd /home/peter/babyJaws/build && $(MAKE) -f CMakeFiles/Makefile2 rov/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : rov/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
@@ -481,6 +495,30 @@ src/color_finder_average.cpp.s:
 	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/jaws_vision.dir/build.make rov/CMakeFiles/jaws_vision.dir/src/color_finder_average.cpp.s
 .PHONY : src/color_finder_average.cpp.s
 
+src/robotLights.o: src/robotLights.cpp.o
+.PHONY : src/robotLights.o
+
+# target to build an object file
+src/robotLights.cpp.o:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/lights_node.dir/build.make rov/CMakeFiles/lights_node.dir/src/robotLights.cpp.o
+.PHONY : src/robotLights.cpp.o
+
+src/robotLights.i: src/robotLights.cpp.i
+.PHONY : src/robotLights.i
+
+# target to preprocess a source file
+src/robotLights.cpp.i:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/lights_node.dir/build.make rov/CMakeFiles/lights_node.dir/src/robotLights.cpp.i
+.PHONY : src/robotLights.cpp.i
+
+src/robotLights.s: src/robotLights.cpp.s
+.PHONY : src/robotLights.s
+
+# target to generate assembly for a file
+src/robotLights.cpp.s:
+	cd /home/peter/babyJaws/build && $(MAKE) -f rov/CMakeFiles/lights_node.dir/build.make rov/CMakeFiles/lights_node.dir/src/robotLights.cpp.s
+.PHONY : src/robotLights.cpp.s
+
 src/rov.o: src/rov.cpp.o
 .PHONY : src/rov.o
 
@@ -520,6 +558,7 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... jaws_vision"
+	@echo "... lights_node"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
@@ -543,6 +582,9 @@ help:
 	@echo "... src/color_finder_average.o"
 	@echo "... src/color_finder_average.i"
 	@echo "... src/color_finder_average.s"
+	@echo "... src/robotLights.o"
+	@echo "... src/robotLights.i"
+	@echo "... src/robotLights.s"
 	@echo "... src/rov.o"
 	@echo "... src/rov.i"
 	@echo "... src/rov.s"

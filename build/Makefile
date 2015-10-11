@@ -397,6 +397,19 @@ jaws_vision/fast:
 .PHONY : jaws_vision/fast
 
 #=============================================================================
+# Target rules for targets named lights_node
+
+# Build rule for target.
+lights_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lights_node
+.PHONY : lights_node
+
+# fast build rule for target.
+lights_node/fast:
+	$(MAKE) -f rov/CMakeFiles/lights_node.dir/build.make rov/CMakeFiles/lights_node.dir/build
+.PHONY : lights_node/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -649,6 +662,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... jaws_vision"
+	@echo "... lights_node"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
