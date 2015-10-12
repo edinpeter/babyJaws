@@ -5,6 +5,10 @@
 #include "ros/ros.h"
 #include "boost/asio.hpp"
 #include "sensor_msgs/Joy.h"
+
+const int SIZE = 1;
+unsigned char packet[SIZE];
+
 class Lights
 {
 public:
@@ -23,22 +27,36 @@ private:
 public:
     Lights() : nh(), i_o(), s_p(i_o)
     {
-        s_p.open("/dev/ttyACM2");
-        ROS_INFO("Serial port: %s ", port_name.c_str());
+        s_p.open("/dev/ttyACM0");
         s_p.set_option(boost::asio::serial_port_base::baud_rate(9600));
-        ROS_INFO("Baud rate: %i", baud_rate);
         sub = nh.subscribe<sensor_msgs::Joy>("joy", 1, &Lights::callback, this);
+        packet[0] = '0';
     }
 };
 void Lights::callback(const sensor_msgs::Joy::ConstPtr& joy)
 {
-    const int SIZE = 3;
-    unsigned char packet[SIZE];
-    packet[0] = '-';
-    packet[1] = 1;
-    packet[2] = '$';
-    ROS_INFO("%s","Written!");
-    s_p.write_some(boost::asio::buffer(&packet, SIZE));
+    int start = 3;
+    int lefttrigger = 8;
+    int righttrigger = 9;
+
+    if(joy->buttons[lefttrigger] > 0 && joy->buttons[righttrigger] > 0){
+        packet[0] = '2';
+        s_p.write_some(boost::asio::buffer(&packet, SIZE));
+        ROS_INFO("%s","Written!");
+
+    }
+    else if(joy->buttons[lefttrigger] > 0){
+        packet[0] = '1';
+        s_p.write_some(boost::asio::buffer(&packet, SIZE));
+        ROS_INFO("%s","Written!");
+
+    }
+    else if(joy->buttons[start] > 0){
+        packet[0] = '0';
+        s_p.write_some(boost::asio::buffer(&packet, SIZE));
+        ROS_INFO("%s","Written!");
+
+    }
 }
 void Lights::loop()
 {
