@@ -1,12 +1,6 @@
 #include "ros/ros.h"
 #include "sensor_msgs/Joy.h"
-
-#undef serial
-
-#ifdef serial
-	#include "boot/asio.hpp"
-#endif
-
+#include "boost/asio.hpp"
 
 const int leftStickX = 1;
 const int leftStickY = 2;
@@ -18,32 +12,25 @@ const int xButton = 7;
 
 class Controls
 {
-  public:
+public:
     Controls();
     void loop();
     void joy_callback(const sensor_msgs::Joy::ConstPtr& joy);
-  private:
+private:
     ros::NodeHandle nh;
     ros::Publisher pub;
     ros::Subscriber joy;
     ros::Subscriber imu;
-    #ifdef serial
-    	boost::asio::serial_port s_p;
-    	s_p.open("/dev/ttyUSB0");
-		s_p.set_option(boost::asio::serial_port_base::baud_rate(9600));
-	#endif
+    boost::asio::serial_port s_p;
+    boost::asio::io_service i_o;
+
 };
 
-int main(int argc, char **argv)
-{
-  ros::init(argc, argv, "controls_node");
-  Controls controls;
-  controls.loop();
-}
-
-Controls::Controls() : nh()
+Controls::Controls() : nh(), s_p(i_o), i_o()
 {
   joy = nh.subscribe<sensor_msgs::Joy>("joy", 1, &Controls::joy_callback, this);
+  s_p.open("/dev/ttyUSB0");
+  s_p.set_option(boost::asio::serial_port_base::baud_rate(9600));
 }
 
 void Controls::loop()
@@ -74,8 +61,8 @@ void Controls::joy_callback(const sensor_msgs::Joy::ConstPtr& joy)
   }
   /* No Servos, because I said so */
   if(joy->buttons[xButton] > 0){
-  	leftServoAngle = 90;
-  	rightServoAngle = 90;
+    leftServoAngle = 90;
+    rightServoAngle = 90;
   }
 
   leftPower = joy->axes[leftStickY] * (100.0 / 127.0) * leftMultiplier;
@@ -96,7 +83,12 @@ void Controls::joy_callback(const sensor_msgs::Joy::ConstPtr& joy)
   packet[8] = leftPower;
   packet[9] = rightPower >> 8;
   packet[10] = rightPower;
-  #ifdef serial
-	s_p.write_some(boost::asio::buffer(&packet, SIZE));
-  #endif
+  s_p.write_some(boost::asio::buffer(&packet, SIZE));
+}
+
+int main(int argc, char **argv)
+{
+  ros::init(argc, argv, "controls_node");
+  Controls controls;
+  controls.loop();
 }

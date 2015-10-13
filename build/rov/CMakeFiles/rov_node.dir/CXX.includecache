@@ -11,8 +11,8 @@ ros/ros.h
 /home/peter/babyJaws/src/rov/src/ros/ros.h
 sensor_msgs/Joy.h
 /home/peter/babyJaws/src/rov/src/sensor_msgs/Joy.h
-boot/asio.hpp
-/home/peter/babyJaws/src/rov/src/boot/asio.hpp
+boost/asio.hpp
+/home/peter/babyJaws/src/rov/src/boost/asio.hpp
 
 /opt/ros/jade/include/XmlRpcDecl.h
 ros/macros.h
